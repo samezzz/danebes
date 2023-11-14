@@ -4,11 +4,12 @@ import { footerLinks, socialMedia } from '@/constants'
 import styles from '@/styles/styles'
 import Image from 'next/image'
 import React from 'react'
+import { ModeToggle } from './ModeToggle'
 
 const Footer = () => {
   return (
     <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
-    <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
+    {/* <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
       <div className="flex-[1] flex flex-col justify-start mr-10">
         <Image
           src="/assets/logo.svg"
@@ -32,7 +33,7 @@ const Footer = () => {
               {footerlink.links.map((link, index) => (
                 <li
                   key={link.name}
-                  className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${
+                  className={`font-poppins font-normal text-[16px] leading-[24px] hover:text-secondary cursor-pointer ${
                     index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
                   }`}
                 >
@@ -43,7 +44,7 @@ const Footer = () => {
           </div>
         ))}
       </div>
-    </div>
+    </div> */}
 
     <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
       <p className="font-poppins font-normal text-center text-[18px] leading-[27px]">
@@ -51,7 +52,7 @@ const Footer = () => {
       </p>
 
       <div className="flex flex-row md:mt-0 mt-6">
-        {socialMedia.map((social, index) => (
+        {/* {socialMedia.map((social, index) => (
           <Image
             key={social.id}
             src={social.icon}
@@ -61,7 +62,8 @@ const Footer = () => {
             }`}
             onClick={() => window.open(social.link)}
           />
-        ))}
+        ))} */}
+        <ModeToggle />
       </div>
     </div>
   </section>

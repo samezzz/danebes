@@ -5,11 +5,11 @@ import {
   Hero,
   Stats,
   Business,
-  Billing,
+  ProductTypeTwo,
   Testimonials,
   CTA,
   Footer,
-  CardDeal,
+  ProductTypeOne,
 } from "../components";
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={` ${styles.flexStart}`}>
+      <div className={`${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Hero />
         </div>
@@ -34,8 +34,8 @@ export default function Home() {
           <div className={`${styles.boxWidth}`}>
             <Stats />
             <Business />
-            <Billing />
-            <CardDeal />
+            <ProductTypeTwo />
+            <ProductTypeOne />
             <Testimonials />
             <CTA />
             <Footer />

@@ -6,7 +6,6 @@ import React, { useState } from 'react';
 
 import { Poppins } from 'next/font/google';
 import Link from 'next/link';
-import { ModeToggle } from './ModeToggle';
 
 const poppins = Poppins({ subsets: ['latin'], weight: "500" })
 
@@ -14,14 +13,14 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false)
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <Image
+      Danebes Logo 
+      {/* <Image
         src='/assets/logo.svg'
         alt='logo'
         width={124}
         height={32}
         className=""
-      />
-      <ModeToggle />
+      /> */}
 
       <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
         {

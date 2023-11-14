@@ -3,7 +3,7 @@ import React from 'react'
 import Button from './Button'
 import Image from 'next/image'
 
-const CardDeal = () => {
+const ProductTypeOne = () => {
   return (
     <section className={`${layout.section}`}>
     <div className={`${layout.sectionInfo}`}>
@@ -20,10 +20,10 @@ const CardDeal = () => {
     </div>
 
     <div className={`${layout.sectionImg}`}>
-      <Image src="/assets/card.png" alt="billing" width={500} height={500} className="object-contain" />
+      <Image src="/assets/card.png" alt="product" width={500} height={500} className="object-contain" />
     </div>
   </section>
   )
 }
 
-export default CardDeal
+export default ProductTypeOne

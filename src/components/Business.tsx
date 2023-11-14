@@ -20,13 +20,19 @@ const ServiceCard = ({ icon, title, content, index }: ServiceCardProps) => (
     <div
       className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
     >
-      <Image src={icon} alt="star" width={30} height={30} className="mx-auto object-contain" />
+      <Image
+        src={icon}
+        alt="star"
+        width={30}
+        height={30}
+        className="mx-auto object-contain"
+      />
     </div>
     <div className="flex-1 flex flex-col ml-3">
       <h4 className="font-poppins font-semibold text-[18px] leading-[23.4px] mb-1">
         {title}
       </h4>
-      <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[24px]">
+      <p className="font-poppins font-normal text-[16px] leading-[24px]">
         {content}
       </p>
     </div>
@@ -38,13 +44,13 @@ const Business = () => {
     <section id="services" className={`${layout.section}`}>
       <div className={`${layout.sectionInfo}`}>
         <h2 className={`${styles.heading2}`}>
-          You do the business, <br className="sm:block hidden" /> we’ll handle
-          the money.
+          Transforming Healthcare Solutions with Precision and Quality
+          <br className="sm:block hidden" />
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          With the right credit card, you can improve your financial life by
-          building credit, earning rewards and saving money. But with hundreds
-          of credit cards on the market.
+          We deliver comprehensive Biomedical Engineering solutions, including
+          precision equipment, tailored services, and innovative healthcare
+          advancements.
         </p>
 
         <Button styles={`mt-10`} />

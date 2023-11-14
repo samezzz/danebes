@@ -1,4 +1,19 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../../public/assets";
+import {
+  people01,
+  people02,
+  people03,
+  facebook,
+  instagram,
+  linkedin,
+  twitter,
+  airbnb,
+  binance,
+  coinbase,
+  dropbox,
+  send,
+  shield,
+  star,
+} from "../../public/assets";
 
 export const navLinks = [
   {
@@ -23,23 +38,23 @@ export const services = [
   {
     id: "service-1",
     icon: star,
-    title: "Rewards",
+    title: "Tailored Services",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "Benefit from personalized Biomedical Engineering services crafted to meet your unique needs. Our experts work closely with you to deliver solutions that align with your goals and requirements.",
   },
   {
     id: "service-2",
     icon: shield,
-    title: "100% Secured",
+    title: "Cutting-Edge Equipment",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "Explore our range of state-of-the-art Biomedical Engineering equipment, designed to elevate precision, efficiency, and innovation in healthcare solutions.",
   },
   {
     id: "service-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "Biomedical Consultancy",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "Engage with our team for expert advice on biomedical strategies and advancements. Whether it's optimizing processes, implementing new technologies, or staying compliant with industry standards, our consultancy services guide you towards excellence in Biomedical Engineering.",
   },
 ];
 
@@ -47,7 +62,7 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
+      "Impressed by the precision of the equipment provided by Danebes. The haematology analyzer has significantly enhanced our diagnostic capabilities, and the expert guidance received on its usage has been invaluable.",
     name: "Herman Jensen",
     title: "Founder & Leader",
     img: people01,
@@ -55,7 +70,7 @@ export const feedback = [
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
+      "Danebes has been our go-to for biomedical consultancy. Their insights into emerging technologies and their practical applications have been instrumental in advancing our research projects. Highly recommend their services!",
     name: "Steve Mark",
     title: "Founder & Leader",
     img: people02,
@@ -63,7 +78,7 @@ export const feedback = [
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
+      "The centrifuges provided by Danebes have been a game-changer in our lab. Reliable, easy to use, and with a quick turnaround time, they've significantly optimized our sample processing workflows.",
     name: "Kenn Gallagher",
     title: "Founder & Leader",
     img: people03,
@@ -79,12 +94,12 @@ export const stats = [
   {
     id: "stats-2",
     title: "Trusted by Company",
-    value: "230+",
+    value: "100+",
   },
   {
     id: "stats-3",
     title: "Products sold",
-    value: "100+",
+    value: "500+",
   },
 ];
 

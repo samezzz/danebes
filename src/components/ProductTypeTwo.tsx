@@ -3,13 +3,13 @@ import React from "react";
 import styles, { layout } from "@/styles/styles";
 import Image from "next/image";
 
-const Billing = () => {
+const ProductTypeTwo = () => {
   return (
     <section id="product" className={`${layout.sectionReverse}`}>
       <div className={`${layout.sectionImgReverse}`}>
         <Image
           src="/assets/bill.png"
-          alt="billing"
+          alt="Product"
           width={500}
           height={500}
           className="object contain relative z-[5]"
@@ -53,4 +53,4 @@ const Billing = () => {
   );
 };
 
-export default Billing;
+export default ProductTypeTwo;

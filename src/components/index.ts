@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
-import Billing from "./Billing";
-import CardDeal from "./CardDeal";
+import ProductTypeTwo from "./ProductTypeTwo";
+import ProductTypeOne from "./ProductTypeOne";
 import Business from "./Business";
 import Stats from "./Stats";
 import CTA from "./CTA";
@@ -11,8 +11,8 @@ import GetStarted from "./GetStarted";
 
 export {
   Navbar,
-  Billing,
-  CardDeal,
+  ProductTypeTwo,
+  ProductTypeOne,
   Business,
   CTA,
   Stats,

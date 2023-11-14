@@ -10,7 +10,7 @@ interface FeedbackCardProps {
 
 const FeedbackCard = ({ content, name, title, img }: FeedbackCardProps) => {
   return (
-    <div className="flex justify-between flex-col px-10 py-12 rounded-[20px]  max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card">
+    <div className="flex justify-between flex-col px-6 md:px-10 py-8 md:py-12 rounded-[20px]  max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card">
       <Image
         src="/assets/quotes.svg"
         alt="double_quotes"
@@ -18,7 +18,7 @@ const FeedbackCard = ({ content, name, title, img }: FeedbackCardProps) => {
         height={27.6}
         className="object-contain"
       />
-      <p className="font-poppins font-normal text-[18px] leading-[32.4px]my-10">
+      <p className="font-poppins font-normal text-[18px] leading-[30px] md:leading-[32.4px] my-10">
         {content}
       </p>
 
@@ -32,7 +32,7 @@ const FeedbackCard = ({ content, name, title, img }: FeedbackCardProps) => {
           <h4 className="font-poppins font-semibold text-[20px] leading-[32px]">
             {name}
           </h4>
-          <p className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite">
+          <p className="font-poppins font-normal text-[16px] leading-[24px]">
             {title}
           </p>
         </div>
