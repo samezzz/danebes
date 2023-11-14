@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import Hero from "./Hero";
 import GetStarted from "./GetStarted";
+import Founder from "./Founder";
 
 export {
   Navbar,
@@ -18,6 +19,7 @@ export {
   Stats,
   Footer,
   Testimonials,
+  Founder,
   Hero,
   GetStarted
 };

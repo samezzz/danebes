@@ -10,6 +10,7 @@ import {
   CTA,
   Footer,
   ProductTypeOne,
+  Founder,
 } from "../components";
 
 export default function Home() {
@@ -36,6 +37,7 @@ export default function Home() {
             <Business />
             <ProductTypeTwo />
             <ProductTypeOne />
+            <Founder />
             <Testimonials />
             <CTA />
             <Footer />

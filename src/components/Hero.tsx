@@ -46,20 +46,24 @@ const Hero = () => {
           requirements. Our focus extends to factors such as precision
           engineering, technological advancements, and client-specific needs.
           Discover quality services and innovative products designed to elevate
-          healthcare solutions. 
+          healthcare solutions.
         </p>
       </div>
 
       <div
         className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
       >
-        <Image
+        <div className="h-[500px] w-[200px]">
+          <DiluentCanvas />
+        </div>
+
+        {/* <Image
           src="/assets/robot.png"
           alt="Product-one"
           width={600}
           height={600}
           className="relative z-[5]"
-        />
+        /> */}
 
         {/* gradient start */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />

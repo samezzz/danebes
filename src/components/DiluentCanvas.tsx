@@ -1,18 +1,12 @@
 "use client";
 
-import { Suspense, useEffect, useState } from "react";
+import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { Preload } from "@react-three/drei";
 import Loader from "./DiluentLoader";
+import DiluentMesh from "./DiluentMesh";
 
-const Diluent = () => {
-  const diluent = useGLTF("./diluent/sample-scene.gltf");
-  return (
-    <mesh>
-      <primitive object={diluent.scene} scale={1} position={[0, 0, 0]} />
-    </mesh>
-  );
-};
+
 
 const DiluentCanvas = () => {
   return (
@@ -24,12 +18,7 @@ const DiluentCanvas = () => {
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<Loader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <Diluent />
+        <DiluentMesh />
       </Suspense>
       <Preload all />
     </Canvas>
