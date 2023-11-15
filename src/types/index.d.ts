@@ -14,6 +14,13 @@ export type ServiceType = {
     content: string
 }
 
+export type ProductType = {
+    name: string
+    description: string
+    image: string | StaticImport
+    price: string
+}
+
 export type FeedbackType = {
     content: string
     name: string

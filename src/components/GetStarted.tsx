@@ -11,7 +11,7 @@ const GetStarted = () => (
     >
       <div className={`${styles.flexStart} flex-row`}>
         <p className="font-poppins font-medium text-[18px] leading-[23.4px] mr-2">
-          <span className="">Get</span>
+          <span className="">Send us</span>
         </p>
         <Image
           src="/assets/arrow-up.svg"
@@ -22,7 +22,7 @@ const GetStarted = () => (
         />
       </div>
       <p className="font-poppins font-medium text-[18px] leading-[23.4px]">
-        <span className="">Started</span>
+        <span className="">an Email</span>
       </p>
     </div>
   </div>

@@ -5,6 +5,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "@/lib/utils";
 import Image from "next/image";
+import { User } from "lucide-react";
 
 const Founder = () => {
   return (
@@ -42,13 +43,14 @@ const Founder = () => {
           variants={fadeIn("left", "tween", 0.2, 1)}
           className="relative flex-1 flex justify-center items-center"
         >
-          <Image
+          <User className="h-24 w-24" />
+          {/* <Image
             src="/assets/people01.png"
             alt="Founder image"
             width={150}
             height={150}
             className="w-auto h-auto min-h-[210px] min-w-[210px] object-cover rounded-[40px]"
-          />
+          /> */}
         </motion.div>
       </motion.div>
     </section>

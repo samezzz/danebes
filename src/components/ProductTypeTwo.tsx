@@ -2,13 +2,22 @@ import React from "react";
 
 import styles, { layout } from "@/styles";
 import Image from "next/image";
+import { ProductType } from "@/types";
 
-const ProductTypeTwo = () => {
+interface ProductTypeTwoProps {
+  items?: ProductType;
+}
+
+const ProductTypeTwo = ({ items }: ProductTypeTwoProps) => {
+  if (!items) return null;
+
   return (
-    <section id="product" className={`${layout.sectionReverse} flex-col-reverse`}>
+    <section
+      className={`${layout.sectionReverse} flex-col-reverse`}
+    >
       <div className={`${layout.sectionImgReverse}`}>
         <Image
-          src="/assets/bill.png"
+          src={items.image}
           alt="Product"
           width={500}
           height={500}
@@ -22,17 +31,14 @@ const ProductTypeTwo = () => {
       </div>
 
       <div className={`${layout.sectionInfo}`}>
-        <h2 className={`${styles.heading2}`}>
-          Easily control your <br className="sm:block hidden" /> billing &
-          invoicing
-        </h2>
-        <p className={`${styles.paragraph} text-neutral-600 dark:text-neutral-300 max-w-[470px] mt-5`}>
-          Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio
-          aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea
-          placerat.
+        <h2 className={`${styles.heading2}`}>{items.name}</h2>
+        <p
+          className={`${styles.paragraph} text-neutral-600 dark:text-neutral-300 max-w-[470px] mt-5`}
+        >
+          {items.description}
         </p>
 
-        <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
+        {/* <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
           <Image
             src="/assets/apple.svg"
             alt="google_play"
@@ -47,7 +53,7 @@ const ProductTypeTwo = () => {
             height={43.08}
             className="object-contain cursor-pointer"
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );

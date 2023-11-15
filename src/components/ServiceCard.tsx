@@ -23,7 +23,7 @@ const ServiceCard = ({ items }: ServiceCardProps) => {
         <Icon className="mr-2 h-7 w-7 ml-2 text-green-500" />
       </div>
       <div className="flex-1 flex flex-col ml-3">
-        <h4 className="font-poppins font-semibold text-[18px] leading-[23.4px] mb-1">
+        <h4 className="font-poppins font-semibold text-[18px] leading-[23.4px] mb-3">
           {items.title}
         </h4>
         <p

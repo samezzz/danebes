@@ -12,8 +12,23 @@ import {
   ProductTypeOne,
   Founder,
 } from "../components";
+import { productsCat1, productsCat2 } from "@/constants";
 
 export default function Home() {
+
+  // Combine both product arrays
+  const combinedProducts = [];
+  const maxLength = Math.max(productsCat1.length, productsCat2.length);
+
+  for (let i = 0; i < maxLength; i++) {
+    if (productsCat1[i]) {
+      combinedProducts.push(productsCat1[i]);
+    }
+    if (productsCat2[i]) {
+      combinedProducts.push(productsCat2[i]);
+    }
+  }
+
   return (
     <main>
       <div className="w-full overflow-hidden">
@@ -35,8 +50,13 @@ export default function Home() {
           <div className={`${styles.boxWidth}`}>
             <Stats />
             <Business />
-            <ProductTypeTwo />
-            <ProductTypeOne />
+            {combinedProducts.map((product, index) => {
+              if (index % 2 === 0) {
+                return <ProductTypeOne items={product} key={index} />;
+              } else {
+                return <ProductTypeTwo items={product} key={index} />;
+              }
+            })}
             <Founder />
             <Testimonials />
             <CTA />
