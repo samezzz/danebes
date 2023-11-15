@@ -6,10 +6,9 @@ import React, { useRef } from "react";
 const DiluentMesh = () => {
   const diluent = useGLTF("./diluent/sample-scene.gltf");
   const diluentRef = useRef<Mesh>(null);
-  console.log(diluentRef);
 
     useFrame((state, delta) => {
-      if(diluentRef.current) diluentRef.current.rotation.y += delta;
+      if(diluentRef.current) diluentRef.current.rotation.y += 0.005;
     });
 
   return (
@@ -25,4 +24,5 @@ const DiluentMesh = () => {
     </>
   );
 };
+
 export default DiluentMesh;

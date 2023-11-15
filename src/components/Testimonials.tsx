@@ -1,7 +1,5 @@
 import styles, { layout } from '@/styles/styles'
 import React from 'react'
-import Button from './Button'
-import Image from 'next/image'
 import { feedback } from '@/constants'
 import FeedbackCard from './FeedbackCard'
 
@@ -22,7 +20,7 @@ const Testimonials = () => {
     </div>
 
     <div className="flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1]">
-      {feedback.map((card) => <FeedbackCard key={card.id} {...card} />)}
+      {feedback.map((card, index) => <FeedbackCard key={index} items={card} />)}
     </div>
   </section>
   )

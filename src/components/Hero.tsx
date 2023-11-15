@@ -13,7 +13,7 @@ const Hero = () => {
       <div
         className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
       >
-        <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2 w-[370px]">
+        <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient border border-border rounded-[10px] mb-2 w-[370px]">
           <Image
             src="/assets/Discount.svg"
             alt="discount"
@@ -29,7 +29,7 @@ const Hero = () => {
 
         <div className="flex flex-row justify-between items-center w-full">
           <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] ss:leading-[100.8px] leading-[75px]">
-            <span className="text-gradient">Danebes</span>{" "}
+            <span className="text-primary">Danebes</span>{" "}
             <br className="sm:block hidden" />{" "}
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
@@ -53,7 +53,7 @@ const Hero = () => {
       <div
         className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
       >
-        <div className="h-[500px] w-[200px]">
+        <div className="md:h-[500px] md:w-[190px] h-[400px] w-[150px]">
           <DiluentCanvas />
         </div>
 

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const ProductTypeTwo = () => {
   return (
-    <section id="product" className={`${layout.sectionReverse}`}>
+    <section id="product" className={`${layout.sectionReverse} flex-col-reverse`}>
       <div className={`${layout.sectionImgReverse}`}>
         <Image
           src="/assets/bill.png"

@@ -4,14 +4,14 @@ import React from "react";
 
 const GetStarted = () => (
   <div
-    className={`${styles.flexCenter} w-[140px] h-[140px] rounded-full bg-blue-gradient p-[2px] cursor-pointer`}
+    className={`${styles.flexCenter} w-[140px] h-[140px] rounded-full bg-primary p-[2px] cursor-pointer hover:bg-secondary `}
   >
     <div
-      className={`${styles.flexCenter} flex-col w-[100%] bg-secondary h-[100%] rounded-full`}
+      className={`${styles.flexCenter} flex-col w-[100%] bg-secondary h-[100%] rounded-full hover:opacity-90 hover:animate-ping-once`}
     >
       <div className={`${styles.flexStart} flex-row`}>
         <p className="font-poppins font-medium text-[18px] leading-[23.4px] mr-2">
-          <span className="text-gradient">Get</span>
+          <span className="">Get</span>
         </p>
         <Image
           src="/assets/arrow-up.svg"
@@ -22,7 +22,7 @@ const GetStarted = () => (
         />
       </div>
       <p className="font-poppins font-medium text-[18px] leading-[23.4px]">
-        <span className="text-gradient">Started</span>
+        <span className="">Started</span>
       </p>
     </div>
   </div>

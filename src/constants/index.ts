@@ -1,3 +1,4 @@
+import { ClientType, FeedbackType, FooterLinkType, NavLinkType, ServiceType, SiteConfig, SocialMediaType, StatsType } from "@/types";
 import {
   people01,
   people02,
@@ -15,95 +16,87 @@ import {
   star,
 } from "../../public/assets";
 
-export const navLinks = [
+export const navLinks: NavLinkType = [
   {
-    id: "home",
     title: "Home",
+    href: "#home",
+    icon: "home"
   },
   {
-    id: "services",
     title: "Services",
+    href: "#services",
+    icon: "services"
   },
   {
-    id: "product",
-    title: "Product",
+    title: "Products",
+    href: "#product",
+    icon: "product"
   },
   {
-    id: "clients",
     title: "Clients",
+    href: "#clients",
+    icon: "clients"
   },
 ];
 
-export const services = [
+export const services: ServiceType[] = [
   {
-    id: "service-1",
-    icon: star,
+    icon: "services",
     title: "Tailored Services",
     content:
       "Benefit from personalized Biomedical Engineering services crafted to meet your unique needs. Our experts work closely with you to deliver solutions that align with your goals and requirements.",
   },
   {
-    id: "service-2",
-    icon: shield,
+    icon: "product",
     title: "Cutting-Edge Equipment",
     content:
       "Explore our range of state-of-the-art Biomedical Engineering equipment, designed to elevate precision, efficiency, and innovation in healthcare solutions.",
   },
   {
-    id: "service-3",
-    icon: send,
+    icon: "clients",
     title: "Biomedical Consultancy",
     content:
       "Engage with our team for expert advice on biomedical strategies and advancements. Whether it's optimizing processes, implementing new technologies, or staying compliant with industry standards, our consultancy services guide you towards excellence in Biomedical Engineering.",
   },
 ];
 
-export const feedback = [
+export const feedback: FeedbackType[] = [
   {
-    id: "feedback-1",
     content:
       "Impressed by the precision of the equipment provided by Danebes. The haematology analyzer has significantly enhanced our diagnostic capabilities, and the expert guidance received on its usage has been invaluable.",
     name: "Herman Jensen",
     title: "Founder & Leader",
-    img: people01,
   },
   {
-    id: "feedback-2",
     content:
       "Danebes has been our go-to for biomedical consultancy. Their insights into emerging technologies and their practical applications have been instrumental in advancing our research projects. Highly recommend their services!",
     name: "Steve Mark",
     title: "Founder & Leader",
-    img: people02,
   },
   {
-    id: "feedback-3",
     content:
       "The centrifuges provided by Danebes have been a game-changer in our lab. Reliable, easy to use, and with a quick turnaround time, they've significantly optimized our sample processing workflows.",
     name: "Kenn Gallagher",
     title: "Founder & Leader",
-    img: people03,
   },
 ];
 
-export const stats = [
+export const stats: StatsType = [
   {
-    id: "stats-1",
     title: "Services offered",
     value: "200+",
   },
   {
-    id: "stats-2",
     title: "Trusted by Company",
     value: "100+",
   },
   {
-    id: "stats-3",
     title: "Products sold",
     value: "500+",
   },
 ];
 
-export const footerLinks = [
+export const footerLinks: FooterLinkType = [
   {
     title: "Useful Links",
     links: [
@@ -169,44 +162,53 @@ export const footerLinks = [
   },
 ];
 
-export const socialMedia = [
+export const socialMedia: SocialMediaType = [
   {
     id: "social-media-1",
-    icon: instagram,
+    icon: "product",
     link: "https://www.instagram.com/",
   },
   {
     id: "social-media-2",
-    icon: facebook,
+    icon: "product",
     link: "https://www.facebook.com/",
   },
   {
     id: "social-media-3",
-    icon: twitter,
+    icon: "product",
     link: "https://www.twitter.com/",
   },
   {
     id: "social-media-4",
-    icon: linkedin,
+    icon: "product",
     link: "https://www.linkedin.com/",
   },
 ];
 
-export const clients = [
+export const clients: ClientType = [
   {
-    id: "client-1",
-    logo: airbnb,
+    name: "client-1",
+    logo: "user",
   },
   {
-    id: "client-2",
-    logo: binance,
+    name: "client-2",
+    logo: "user",
   },
   {
-    id: "client-3",
-    logo: coinbase,
+    name: "client-3",
+    logo: "user",
   },
   {
-    id: "client-4",
-    logo: dropbox,
+    name: "client-4",
+    logo: "user",
   },
 ];
+
+
+export const siteConfig: SiteConfig = {
+  name: "Danebes",
+  description:
+    "Danebes Biomedical Service",
+  url: "https://danebes.vercel.app",
+  ogImage: "",
+}
