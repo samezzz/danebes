@@ -7,7 +7,7 @@ const DiluentMesh = () => {
   const diluent = useGLTF("./diluent/sample-scene.gltf");
   const diluentRef = useRef<Mesh>(null);
 
-    useFrame((state, delta) => {
+    useFrame(() => {
       if(diluentRef.current) diluentRef.current.rotation.y += 0.005;
     });
 

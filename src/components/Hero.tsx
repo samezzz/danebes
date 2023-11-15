@@ -1,8 +1,10 @@
-import styles from "@/styles/styles";
+import styles from "@/styles";
 import Image from "next/image";
 import React from "react";
 import { GetStarted } from ".";
 import DiluentCanvas from "./DiluentCanvas";
+
+import { HeartHandshake } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -13,17 +15,10 @@ const Hero = () => {
       <div
         className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
       >
-        <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient border border-border rounded-[10px] mb-2 w-[370px]">
-          <Image
-            src="/assets/Discount.svg"
-            alt="discount"
-            width={32}
-            height={32}
-            className=""
-          />
-          <p className={`${styles.paragraph} ml-2`}>
-            <span className="">20%</span> Discount For{" "}
-            <span className="">1 Month</span> Account
+        <div className="flex flex-row items-center py-[6px] px-4 bg-secondary border border-border rounded-[10px] mb-2 w-[270px]">
+          <HeartHandshake className="text-red-500"/>
+          <p className={`${styles.paragraph} text-neutral-600 dark:text-neutral-300 ml-2`}>
+            <span className="">Your Trusted</span> Partner!
           </p>
         </div>
 
@@ -38,9 +33,9 @@ const Hero = () => {
         </div>
 
         <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px]  ss:leading-[100.8px] leading-[75px] w-full">
-          Biomedical Services
+        <span className="text-green-500">Biomedical</span> Services
         </h1>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+        <p className={`${styles.paragraph} text-neutral-600 dark:text-neutral-300 max-w-[470px] mt-5`}>
           At Danebes, our team of skilled professionals employs a meticulous
           methodology to tailor Biomedical Engineering solutions to your unique
           requirements. Our focus extends to factors such as precision

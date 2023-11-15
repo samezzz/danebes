@@ -1,4 +1,4 @@
-import styles, { layout } from '@/styles/styles'
+import styles, { layout } from '@/styles'
 import React from 'react'
 import Button from './Button'
 import Image from 'next/image'
@@ -11,7 +11,7 @@ const ProductTypeOne = () => {
         Find a better card deal <br className="sm:block hidden" /> in few easy
         steps.
       </h2>
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+      <p className={`${styles.paragraph} text-neutral-600 dark:text-neutral-300 max-w-[470px] mt-5`}>
         Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis
         aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
       </p>

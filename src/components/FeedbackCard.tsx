@@ -1,4 +1,4 @@
-import styles from "@/styles/styles";
+import styles from "@/styles";
 import { FeedbackType } from "@/types";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
@@ -20,7 +20,7 @@ const FeedbackCard = ({ items }: FeedbackCardProps) => {
     <div className="flex justify-between flex-col px-6 md:px-10 py-8 md:py-12 rounded-[20px]  max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card border border-border">
       <Quote className="h-8 w-8 text-primary"/>
       
-      <p className={`${styles.paragraph} font-poppins font-normal md:leading-[32.4px] my-10`}>
+      <p className={`${styles.paragraph} text-neutral-600 dark:text-neutral-300 md:leading-[32.4px] my-10`}>
         {items.content}
       </p>
 

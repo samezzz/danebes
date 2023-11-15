@@ -6,8 +6,10 @@ import React, { useState } from "react";
 
 import { Poppins } from "next/font/google";
 import Link from "next/link";
-import { Icons } from "./Icons"
+import { Icons } from "./Icons";
 import { MobileNav } from "./MobileNav";
+
+import { Menu } from "lucide-react";
 
 const poppins = Poppins({ subsets: ["latin"], weight: "400" });
 
@@ -23,7 +25,9 @@ const Navbar = () => {
           return (
             <li
               key={index}
-              className={`${poppins.className} items-baseline gap-x-1 flex cursor-pointer text-[16px] hover:opacity-70 ${
+              className={`${
+                poppins.className
+              } items-baseline gap-x-1 flex cursor-pointer text-[16px] hover:opacity-70 ${
                 index === navLinks.length - 1 ? "mr-0" : "mr-10"
               }`}
             >
@@ -33,14 +37,21 @@ const Navbar = () => {
           );
         })}
       </ul>
-
       <div className="sm:hidden flex justify-end items-center">
-        <button onClick={() => setShowMobileMenu((showMobileMenu) => !showMobileMenu)} className="flex gap-x-2">
-          {showMobileMenu && <Icons.close />}
-          <span className="font-bold">Menu</span>
+        <button
+          onClick={() => setShowMobileMenu((showMobileMenu) => !showMobileMenu)}
+          className="flex gap-x-2"
+        >
+          {showMobileMenu ? <Icons.close /> : <Menu className="" />}
         </button>
         {showMobileMenu && (
-          <MobileNav items={navLinks} isActive={showMobileMenu} closeMenu={() =>  setShowMobileMenu((showMobileMenu) => !showMobileMenu)} />
+          <MobileNav
+            items={navLinks}
+            isActive={showMobileMenu}
+            closeMenu={() =>
+              setShowMobileMenu((showMobileMenu) => !showMobileMenu)
+            }
+          />
         )}
       </div>
     </nav>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles, { layout } from "@/styles/styles";
+import styles, { layout } from "@/styles";
 import Image from "next/image";
 
 const ProductTypeTwo = () => {
@@ -26,7 +26,7 @@ const ProductTypeTwo = () => {
           Easily control your <br className="sm:block hidden" /> billing &
           invoicing
         </h2>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+        <p className={`${styles.paragraph} text-neutral-600 dark:text-neutral-300 max-w-[470px] mt-5`}>
           Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio
           aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea
           placerat.

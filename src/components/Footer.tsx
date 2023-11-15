@@ -1,7 +1,7 @@
 'use client'
 
 import { footerLinks, socialMedia } from '@/constants'
-import styles from '@/styles/styles'
+import styles from '@/styles'
 import Image from 'next/image'
 import React from 'react'
 import { ModeToggle } from './ModeToggle'
@@ -18,7 +18,7 @@ const Footer = () => {
           height={72.14}
           className="object-contain"
         />
-        <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
+        <p className={`${styles.paragraph} text-neutral-600 dark:text-neutral-300 mt-4 max-w-[312px]`}>
           A new way to make the payments easy, reliable and secure.
         </p>
       </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "@/styles/styles";
+import styles from "@/styles";
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "@/lib/utils";
@@ -21,15 +21,15 @@ const Founder = () => {
           className="flex-[0.5] flex justify-end flex-col sm:p-8 p-4 rounded-[32px] border-[1px] border-border relative"
         >
           <div className="px-4 py-6 items-center w-[500px]">
-            <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px] text-white">
+            <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px] text-gray-800 dark:text-gray-200">
               Daniel Essilfie
             </h4>
-            <p className="mt-[6px] font-normal sm:text-[18px] text-[12px] sm:leading-[22.68px] leading-[16.68px] text-white">
+            <p className="mt-[6px] font-normal sm:text-[18px] text-[12px] sm:leading-[22.68px] leading-[16.68px] dark:text-gray-200">
               Founder Danebes
             </p>
           </div>
 
-          <p className={`${styles.paragraph} px-4 pb-6`}>
+          <p className={`${styles.paragraph} text-neutral-600 dark:text-neutral-300 px-4 pb-6`}>
             “Our journey in the realm of Biomedical Engineering has been fueled
             by a passion for precision and a commitment to advancing healthcare
             solutions. From the outset, our goal has been to provide not just

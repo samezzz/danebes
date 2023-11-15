@@ -1,4 +1,4 @@
-import styles, { layout } from '@/styles/styles'
+import styles, { layout } from '@/styles'
 import React from 'react'
 import { feedback } from '@/constants'
 import FeedbackCard from './FeedbackCard'
@@ -13,7 +13,7 @@ const Testimonials = () => {
         What People are <br className="sm:block hidden" /> saying about us
       </h2>
       <div className="w-full md:mt-0 mt-6">
-        <p className={`${styles.paragraph} text-left max-w-[450px]`}>
+        <p className={`${styles.paragraph} text-neutral-600 dark:text-neutral-300 text-left max-w-[450px]`}>
         Let us take care of your Biomedical Engineering needs while you focus on what matters.
         </p>
       </div>
