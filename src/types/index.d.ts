@@ -1,5 +1,6 @@
 import type { Icon } from "lucide-react"
 import { Icons } from "@/components/Icons"
+import { Variants } from "framer-motion"
 
 export type NavLinkType = {
     title: string

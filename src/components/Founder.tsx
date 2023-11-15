@@ -9,8 +9,9 @@ import { User } from "lucide-react";
 
 const Founder = () => {
   return (
-    <section className={`${styles.paddingY} ${styles.flexCenter} max-w-[700px] mx-auto`}>
+    <section className={`${styles.paddingY} ${styles.flexCenter} max-w-[700px] mx-auto my-24`}>
       <motion.div
+      // @ts-expect-error
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
