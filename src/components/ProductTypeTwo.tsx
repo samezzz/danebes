@@ -32,13 +32,21 @@ const ProductTypeTwo = ({ items }: ProductTypeTwoProps) => {
 
       <div className={`${layout.sectionInfo}`}>
         <h2 className={`${styles.heading2}`}>{items.name}</h2>
+        <h3 className="md:text-lg lg:text-xl text-green-500" >{items.price}</h3>
         <p
           className={`${styles.paragraph} text-neutral-600 dark:text-neutral-300 max-w-[470px] mt-5`}
         >
           {items.description}
         </p>
+      </div>
+    </section>
+  );
+};
 
-        {/* <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
+export default ProductTypeTwo;
+
+
+ {/* <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
           <Image
             src="/assets/apple.svg"
             alt="google_play"
@@ -54,9 +62,3 @@ const ProductTypeTwo = ({ items }: ProductTypeTwoProps) => {
             className="object-contain cursor-pointer"
           />
         </div> */}
-      </div>
-    </section>
-  );
-};
-
-export default ProductTypeTwo;

@@ -49,7 +49,7 @@ const Hero = () => {
         className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
       >
         <div className="md:h-[500px] md:w-[190px] h-[400px] w-[150px]">
-          {/* <DiluentCanvas /> */}
+          <DiluentCanvas />
         </div>
 
         {/* <Image
