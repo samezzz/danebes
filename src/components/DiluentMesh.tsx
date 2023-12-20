@@ -4,7 +4,7 @@ import { Mesh } from 'three';
 import React, { useRef } from "react";
 
 const DiluentMesh = () => {
-  const diluent = useGLTF("./diluent/sample-scene.gltf");
+  const diluent = useGLTF("./diluent/microscope-2.gltf");
   const diluentRef = useRef<Mesh>(null);
 
     useFrame(() => {
@@ -19,7 +19,7 @@ const DiluentMesh = () => {
         minPolarAngle={Math.PI / 2}
       />
       <mesh ref={diluentRef}>
-        <primitive object={diluent.scene} scale={1} position={[0, 0, 0]} />
+        <primitive object={diluent.scene} scale={2} position={[0, -0.3, 0]} />
       </mesh>
     </>
   );

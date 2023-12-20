@@ -12,7 +12,6 @@ const DiluentCanvas = () => {
   return (
     <Canvas
       className="z-10"
-      shadows
       frameloop="always"
       camera={{ position: [0.78, 0, 0] }}
       gl={{ preserveDrawingBuffer: true }}

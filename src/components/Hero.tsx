@@ -1,5 +1,4 @@
 import styles from "@/styles";
-import Image from "next/image";
 import React from "react";
 import { GetStarted } from ".";
 import DiluentCanvas from "./DiluentCanvas";
@@ -48,18 +47,9 @@ const Hero = () => {
       <div
         className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
       >
-        <div className="md:h-[500px] md:w-[190px] h-[400px] w-[150px]">
+        <div className="md:h-[1000px] md:w-[700px] h-[900px] w-[600px]">
           <DiluentCanvas />
         </div>
-
-        {/* <Image
-          src="/assets/robot.png"
-          alt="Product-one"
-          width={600}
-          height={600}
-          className="relative z-[5]"
-        /> */}
-
         {/* gradient start */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
         <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
