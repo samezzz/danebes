@@ -7,7 +7,8 @@ import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
 	title: "Danebes",
-	description: "Danebes Biomedical Services",
+	description:
+		"Danebes specializes in offering top-notch services related to products such as Microscopes, Chemistry Reagents and analyzers and all products in the Biomedical Engineering space.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
