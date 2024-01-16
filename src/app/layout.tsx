@@ -1,21 +1,16 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import '../styles/globals.css'
-import { ThemeProvider } from '@/components/ThemeProvider'
-
-const inter = Inter({ subsets: ['latin'] })
+import type { Metadata } from "next";
+import "../styles/globals.css";
+import { ThemeProvider } from "@/components/ThemeProvider";
+import { GeistSans } from "geist/font/sans";
+import { Analytics } from "@/components/Analytics";
 
 export const metadata: Metadata = {
-  title: 'Danebes',
-  description: 'Danebes Biomedical Services',
-}
+	title: "Danebes",
+	description: "Danebes Biomedical Services",
+};
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+	return (
 		<html lang="en">
 			<head>
 				<link rel="icon" href="/favicon.ico" sizes="any" />
@@ -32,7 +27,7 @@ export default function RootLayout({
 					sizes="<generated>"
 				/>
 			</head>
-			<body className={inter.className}>
+			<body className={GeistSans.className}>
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
@@ -40,8 +35,9 @@ export default function RootLayout({
 					disableTransitionOnChange
 				>
 					{children}
+					<Analytics />
 				</ThemeProvider>
 			</body>
 		</html>
-  );
+	);
 }

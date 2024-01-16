@@ -1,12 +1,12 @@
 "use client";
 
 import { navLinks } from "@/constants";
-// import Image from 'next/image';
+import Image from "next/image";
 import React, { useState } from "react";
 
 import { Poppins } from "next/font/google";
 import Link from "next/link";
-import { Icons } from "./Icons";
+import { Icons, LetterDDark, LetterDLight } from "./Icons";
 import { MobileNav } from "./MobileNav";
 
 import { Menu } from "lucide-react";
@@ -14,54 +14,58 @@ import { Menu } from "lucide-react";
 const poppins = Poppins({ subsets: ["latin"], weight: "400" });
 
 const Navbar = () => {
-  const [showMobileMenu, setShowMobileMenu] = useState(false);
+	const [showMobileMenu, setShowMobileMenu] = useState(false);
 
-  return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
-      Danebes Logo
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
-        {navLinks.map((nav, index) => {
-          const Icon = Icons[nav.icon || "arrowRight"];
-          return (
-            <li
-              key={index}
-              className={`${
-                poppins.className
-              } items-baseline gap-x-1 flex cursor-pointer text-[16px] hover:opacity-70 ${
-                index === navLinks.length - 1 ? "mr-0" : "mr-10"
-              }`}
-            >
-              <Icon className="mr-2 h-4 w-4" />
-              <Link href={`${nav.href}`}>{nav.title}</Link>
-            </li>
-          );
-        })}
-      </ul>
-      <div className="sm:hidden flex justify-end items-center">
-        <button
-          onClick={() => setShowMobileMenu((showMobileMenu) => !showMobileMenu)}
-          className="flex gap-x-2"
-        >
-          {showMobileMenu ? <Icons.close /> : <Menu className="" />}
-        </button>
-        {showMobileMenu && (
-          <MobileNav
-            items={navLinks}
-            isActive={showMobileMenu}
-            closeMenu={() =>
-              setShowMobileMenu((showMobileMenu) => !showMobileMenu)
-            }
-          />
-        )}
-      </div>
-    </nav>
-  );
+	return (
+		<nav className="w-full flex py-6 justify-between items-center navbar">
+			<Image
+				src="/logo.jpg"
+				alt="Danebes logo"
+				width={100}
+				height={100}
+				className="rounded-full"
+			/>
+			<ul className="list-none sm:flex hidden justify-end items-center flex-1">
+				{navLinks.map((nav, index) => {
+					const Icon = Icons[nav.icon || "arrowRight"];
+					return (
+						<li
+							key={index}
+							className={`${
+								poppins.className
+							} items-baseline gap-x-1 flex cursor-pointer text-[16px] hover:opacity-70 ${
+								index === navLinks.length - 1 ? "mr-0" : "mr-10"
+							}`}
+						>
+							<Icon className="mr-2 h-4 w-4" />
+							<Link href={`${nav.href}`}>{nav.title}</Link>
+						</li>
+					);
+				})}
+			</ul>
+			<div className="sm:hidden flex justify-end items-center">
+				<button
+					onClick={() => setShowMobileMenu((showMobileMenu) => !showMobileMenu)}
+					className="flex gap-x-2"
+				>
+					{showMobileMenu ? <Icons.close /> : <Menu className="" />}
+				</button>
+				{showMobileMenu && (
+					<MobileNav
+						items={navLinks}
+						isActive={showMobileMenu}
+						closeMenu={() => setShowMobileMenu((showMobileMenu) => !showMobileMenu)}
+					/>
+				)}
+			</div>
+		</nav>
+	);
 };
 
 export default Navbar;
 
 {
-  /* <Image
+	/* <Image
         src='/assets/logo.svg'
         alt='logo'
         width={124}
@@ -71,7 +75,7 @@ export default Navbar;
 }
 
 {
-  /* <div className="sm:hidden flex flex-1 justify-end items-center">
+	/* <div className="sm:hidden flex flex-1 justify-end items-center">
         <Image
           src={showMobileMenu ? '/assets/close.svg' : '/assets/menu.svg'}
           alt="menu"

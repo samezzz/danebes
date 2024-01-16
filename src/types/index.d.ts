@@ -1,6 +1,9 @@
 import type { Icon } from "lucide-react"
 import { Icons } from "@/components/Icons"
 import { Variants } from "framer-motion"
+import { contactFormSchema } from "@/lib/validations/auth";
+
+export type contactFormData = z.infer<typeof contactFormSchema>;
 
 export type NavLinkType = {
     title: string

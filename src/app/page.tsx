@@ -13,6 +13,7 @@ import {
   Founder,
 } from "../components";
 import { productsCat1, productsCat2 } from "@/constants";
+import { ContactForm } from "@/components/ContactForm";
 
 export default function Home() {
 

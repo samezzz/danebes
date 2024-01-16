@@ -66,64 +66,80 @@ export const feedback: FeedbackType[] = [
 ];
 
 export const productsCat1: ProductType[] = [
-  {
-    name: "Hematology Diluent",
-    description: "Specifically designed for hematology analyzers, it's utilized to dilute blood samples, ensuring accurate cell counting and analysis by the analyzer.",
-    image: '/images/vho3-lyse.png',
-    price: 'GHC999.99',
-  },
-  {
-    name: "Chemistry Diluent",
-    description: " These diluents are tailored for chemistry analyzers and are used in various tests such as electrolyte panels, enzyme assays, and other biochemical tests.",
-    image: '/images/vho3-lyse.png',
-    price: 'GHC999.99',
-  },
-  {
-    name: "Biochemical Reagents",
-    description: "These encompass a wide range of chemicals including enzymes, substrates, and other compounds essential for conducting various biochemical assays, aiding in the identification and quantification of biomolecules.",
-    image: '/images/vho3-lyse.png',
-    price: 'GHC999.99',
-  },
-  {
-    name: "Hematological Reagents",
-    description: "Utilized in blood tests, these reagents include staining solutions used in blood smears and other tests in hematology.",
-    image: '/images/vho3-lyse.png',
-    price: 'GHC999.99',
-  },
-]
+	{
+		name: "Hematology Diluent",
+		description:
+			"Specifically designed for hematology analyzers, it's utilized to dilute blood samples, ensuring accurate cell counting and analysis by the analyzer.",
+		image:
+			"https://res.cloudinary.com/dbdvyklpz/image/upload/v1705339250/ykybdmna6kehbfmf3kuq.png",
+		price: "GHC999.99",
+	},
+	{
+		name: "Chemistry Diluent",
+		description:
+			" These diluents are tailored for chemistry analyzers and are used in various tests such as electrolyte panels, enzyme assays, and other biochemical tests.",
+		image:
+			"https://res.cloudinary.com/dbdvyklpz/image/upload/v1705339247/whoc4r5mzqr5xp1patdv.png",
+		price: "GHC999.99",
+	},
+	{
+		name: "Biochemical Reagents",
+		description:
+			"These encompass a wide range of chemicals including enzymes, substrates, and other compounds essential for conducting various biochemical assays, aiding in the identification and quantification of biomolecules.",
+		image:
+			"https://res.cloudinary.com/dbdvyklpz/image/upload/v1705339247/whoc4r5mzqr5xp1patdv.png",
+		price: "GHC999.99",
+	},
+	{
+		name: "Hematological Reagents",
+		description:
+			"Utilized in blood tests, these reagents include staining solutions used in blood smears and other tests in hematology.",
+		image:
+			"https://res.cloudinary.com/dbdvyklpz/image/upload/v1705339247/whoc4r5mzqr5xp1patdv.png",
+		price: "GHC999.99",
+	},
+];
 
 export const productsCat2: ProductType[] = [
-  {
-    name: "BC-150 Hematology Analyzer",
-    description: "This analyzer is designed for small to medium-sized laboratories, offering a compact solution for routine blood analysis. It provides precise and rapid testing for various blood parameters, including red blood cells, white blood cells, and platelets. Its user-friendly interface and automated functionalities streamline workflow efficiency.",
-    image: '/images/BC-150.png',
-    price: 'GHC999.99',
-  },
-  {
-    name: "BC-430 Hematology Analyzer",
-    description: "This analyzer is designed to handle a large volume of samples efficiently. It's equipped with advanced technology for precise blood analysis, offering a comprehensive range of tests including complete blood counts and differentiation of various blood cell types. Its automation and accuracy make it suitable for high-throughput laboratories.",
-    image: '/images/chem-analyzer-3.png',
-    price: 'GHC999.99',
-  },
-  {
-    name: "BA-88A Semi-Auto Biochemistry Analyzer",
-    description: "The BC-10 is a compact and portable solution designed for point-of-care testing or smaller clinics. It offers basic blood analysis, providing essential parameters like complete blood counts quickly and accurately. Its portability and ease of use make it suitable for settings requiring immediate test results.",
-    image: '/images/hem-analyzer-3.png',
-    price: 'GHC999.99',
-  },
-  {
-    name: "BC-5000 Hematology Analyzer",
-    description: "This analyzer is designed to handle a large volume of samples efficiently. It's equipped with advanced technology for precise blood analysis, offering a comprehensive range of tests including complete blood counts and differentiation of various blood cell types. Its automation and accuracy make it suitable for high-throughput laboratories.",
-    image: '/images/centrifuge-1.png',
-    price: 'GHC999.99',
-  },
-  {
-    name: "BC-10 Hematology Analyzer",
-    description: "The BC-10 is a compact and portable solution designed for point-of-care testing or smaller clinics. It offers basic blood analysis, providing essential parameters like complete blood counts quickly and accurately. Its portability and ease of use make it suitable for settings requiring immediate test results.",
-    image: '/images/MR-96A-Reader.png',
-    price: 'GHC999.99',
-  },
-]
+	{
+		name: "BC-150 Hematology Analyzer",
+		description:
+			"This analyzer is designed for small to medium-sized laboratories, offering a compact solution for routine blood analysis. It provides precise and rapid testing for various blood parameters, including red blood cells, white blood cells, and platelets. Its user-friendly interface and automated functionalities streamline workflow efficiency.",
+		image: "https://res.cloudinary.com/dbdvyklpz/image/upload/v1705339247/whoc4r5mzqr5xp1patdv.png",
+		price: "GHC999.99",
+	},
+	{
+		name: "BC-430 Hematology Analyzer",
+		description:
+			"This analyzer is designed to handle a large volume of samples efficiently. It's equipped with advanced technology for precise blood analysis, offering a comprehensive range of tests including complete blood counts and differentiation of various blood cell types. Its automation and accuracy make it suitable for high-throughput laboratories.",
+		image:
+			"https://res.cloudinary.com/dbdvyklpz/image/upload/v1705339247/whoc4r5mzqr5xp1patdv.png",
+		price: "GHC999.99",
+	},
+	{
+		name: "BA-88A Semi-Auto Biochemistry Analyzer",
+		description:
+			"The BC-10 is a compact and portable solution designed for point-of-care testing or smaller clinics. It offers basic blood analysis, providing essential parameters like complete blood counts quickly and accurately. Its portability and ease of use make it suitable for settings requiring immediate test results.",
+		image:
+			"https://res.cloudinary.com/dbdvyklpz/image/upload/v1705339247/whoc4r5mzqr5xp1patdv.png",
+		price: "GHC999.99",
+	},
+	{
+		name: "BC-5000 Hematology Analyzer",
+		description:
+			"This analyzer is designed to handle a large volume of samples efficiently. It's equipped with advanced technology for precise blood analysis, offering a comprehensive range of tests including complete blood counts and differentiation of various blood cell types. Its automation and accuracy make it suitable for high-throughput laboratories.",
+		image:
+			"https://res.cloudinary.com/dbdvyklpz/image/upload/v1705339247/whoc4r5mzqr5xp1patdv.png",
+		price: "GHC999.99",
+	},
+	{
+		name: "BC-10",
+		description:
+			"The BC-10 is a compact and portable solution designed for point-of-care testing or smaller clinics. It offers basic blood analysis, providing essential parameters like complete blood counts quickly and accurately. Its portability and ease of use make it suitable for settings requiring immediate test results.",
+		image: "https://res.cloudinary.com/dbdvyklpz/image/upload/v1705339247/whoc4r5mzqr5xp1patdv.png",
+		price: "GHC999.99",
+	},
+];
 
 export const stats: StatsType = [
   {
