@@ -3,6 +3,7 @@ import "../styles/globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { GeistSans } from "geist/font/sans";
 import { Analytics } from "@/components/Analytics";
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
 	title: "Danebes",
@@ -35,6 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 					disableTransitionOnChange
 				>
 					{children}
+					<Toaster />
 					<Analytics />
 				</ThemeProvider>
 			</body>
