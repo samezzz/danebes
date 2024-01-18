@@ -10,7 +10,7 @@ export async function sendEmail(formData: contactFormData) {
 	try {
 		const data = await resend.emails.send({
 			from: `${formData.email} <Login@samess.tech>`,
-			to: ["psalmuelselfie@gmail.com", "daniel.essilfie@gmail.com"],
+			to: ["psalmuelselfie@gmail.com", "essilfiedaniel@gmail.com"],
 			subject: `Message from Danebes Website`,
 			react: EmailTemplate(formData ),
 		});
