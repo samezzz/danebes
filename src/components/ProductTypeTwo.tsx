@@ -1,7 +1,5 @@
-import React from "react";
 
 import styles, { layout } from "@/styles";
-import Image from "next/image";
 import { ProductType } from "@/types";
 import CloudinaryImage from "./CloudinaryImage";
 
@@ -20,7 +18,6 @@ const ProductTypeTwo = ({ items }: ProductTypeTwoProps) => {
 
 			<div className={`${layout.sectionInfo}`}>
 				<h2 className={`${styles.heading2}`}>{items.name}</h2>
-				<h3 className="md:text-lg lg:text-xl text-green-500">{items.price}</h3>
 				<p
 					className={`${styles.paragraph} text-neutral-600 dark:text-neutral-300 max-w-[470px] mt-5`}
 				>

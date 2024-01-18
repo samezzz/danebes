@@ -22,7 +22,6 @@ export type ProductType = {
     name: string
     description: string
     image: string | StaticImport
-    price: string
 }
 
 export type FeedbackType = {

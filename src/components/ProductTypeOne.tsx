@@ -14,7 +14,6 @@ const ProductTypeOne = ({ items }: ProductTypeOneProps) => {
 		<section id="product" className={`${layout.section} mx-auto max-w-[1200px]`}>
 			<div className={`${layout.sectionInfo}`}>
 				<h2 className={`${styles.heading2}`}>{items.name}</h2>
-				<p className="md:text-lg lg:text-xl text-green-500">{items.price}</p>
 				<p
 					className={`${styles.paragraph} text-neutral-600 dark:text-neutral-300 max-w-[470px] mt-5`}
 				>
